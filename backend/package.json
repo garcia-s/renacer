@@ -15,5 +15,12 @@
   "bugs": {
     "url": "https://github.com/garcia-s/rescue-backend/issues"
   },
-  "homepage": "https://github.com/garcia-s/rescue-backend#readme"
+  "homepage": "https://github.com/garcia-s/rescue-backend#readme",
+  "dependencies": {
+    "express": "^4.19.2",
+    "express-session": "^1.18.0",
+    "passport": "^0.7.0",
+    "passport-google-oauth": "^2.0.0",
+    "postgresql": "^0.0.1"
+  }
 }
