@@ -16,6 +16,8 @@ export default async function Home() {
             </main>
         );
     } catch (e) {
-        return <div> NO Se pudo traer la config</div>
+        return <div NO Se pudo traer la config</div>
     }
 }
+
+
