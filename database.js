@@ -1,7 +1,7 @@
 import { Pool } from "pg"
 
 
-const conn = new Pool({
+const connection = new Pool({
     user: "postgres",
     password: "postgresD",
     database: "postgres",
@@ -9,5 +9,5 @@ const conn = new Pool({
     port: 5432,
 })
 
-export default conn
+export default connection
 

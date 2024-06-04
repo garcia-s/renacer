@@ -7,12 +7,17 @@
         "build": "next build",
         "start": "next start",
         "lint": "next lint",
-        "install": "node ./install/install.js"
+        "install": "node ./install/install.js",
+        "test:install": "jest . --config ./jest.config.json",
+        "test:migrate": "jest ."
     },
     "dependencies": {
+        "@databases/pg-test": "^3.1.2",
+        "jest": "^29.7.0",
         "next": "14.2.3",
         "next-auth": "^4.24.7",
         "pg": "^8.11.5",
+        "pgmock2": "^2.1.7",
         "react": "^18",
         "react-dom": "^18"
     },
