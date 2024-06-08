@@ -1,3 +1,4 @@
-const { dbConn, install } = require("./install_script.js")
+import { dbConn, install } from "./install_script.js"
+
 
 install(dbConn)

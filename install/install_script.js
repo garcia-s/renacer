@@ -1,6 +1,6 @@
 
-const pg = require("pg")
-const fs = require("fs")
+import pg from "pg"
+import fs from "fs"
 
 const dbConn = new pg.Pool({
     user: "postgres",

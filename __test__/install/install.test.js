@@ -1,7 +1,5 @@
-
-const pg = require("pg")
-const { default: getDatabase } = require("@databases/pg-test")
-const { install } = require("../install/install_script.js")
+import pg from "pg"
+import { install } from "../../install/install_script"
 
 let client
 
