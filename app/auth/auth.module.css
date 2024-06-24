@@ -1,0 +1,9 @@
+.auth {
+    width: 100%;
+    min-height: 100vh;
+    min-height: 100svh;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

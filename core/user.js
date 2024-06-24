@@ -1,24 +1,41 @@
 
-import crypto from "crypto";
-import { v4 } from "uuid";
+import crypto from "crypto"
+import { v4 } from "uuid"
+
+//Private constructor
+//@Constructor
+
+class Hash {
+    compare(hash) {
+        return this.hash == hash.hash
+    }
+}
 
 export function CreateUser(userData) {
-    //FIXME: VALIDAR LA DATA DEL USUARIO
-    const id = v4();
-    const salt = crypto.randomBytes(64).toString('hex');
-    const cycles = crypto.randomInt(7000, 10000);
-    const hash = crypto.pbkdf2Sync(userData.password, salt, cycles, 512, 'sha512').toString("hex");
+    const user = {}
+    user.id = v4()
+    user.email = userData.email
+    user.hash = createHash(userData.password)
+    return Object.freeze(user)
+}
 
-    return Object.freeze({
-        id,
-        hash,
-        salt,
-        cycles,
-        email: userData.email,
-    })
+export function createHash(password) {
+    const hash = new Hash()
+    hash.salt = crypto.randomBytes(64).toString('hex')
+    hash.hash = crypto.pbkdf2Sync(password, salt, cycles, 512, 'sha512').toString("hex")
+    hash.cycles = crypto.randomInt(7000, 10000)
+    return hash
+}
+
+
+export function regenerateHash(hash, cycles, salt) {
+    const hash = new Hash()
+    hash.hash = hash
+    hash.cycles = cycles
+    hash.salt = salt
+    return hash
 }
 
 
 
 
-// "hola" + "123asdasdasd"
