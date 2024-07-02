@@ -46,3 +46,15 @@ docker compose up -d
     - Agregar la función de comprara hashes y explicar SideChannel Attacks y porque son relevantes al tema.
     - Cambiar config de la base de datos para trabajar con las variables de entorno.
     - Sane Separation of concerns Juan, highly needed if we are going to coordinate the team.
+
+
+
+
+A bit of inspo
+
+
+https://codepen.io/alexzaworski/pen/mEZvrG
+https://codepen.io/isuttell/pen/OJrajQ
+https://codepen.io/fixcl/pen/WxeObg
+https://codepen.io/ksenia-k/pen/jXbWaJ
+https://codepen.io/giomgio/pen/abxGyQX

@@ -1,6 +1,7 @@
 @media (prefers-color-scheme: dark) {}
 
 
+input {}
 body,
 html {
     margin: 0;
