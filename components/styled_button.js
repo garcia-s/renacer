@@ -7,3 +7,5 @@ export default function StyledButton({ children, onClick, type }) {
         {children}
     </button>
 }
+
+//comentario 2
