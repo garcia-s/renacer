@@ -7,7 +7,7 @@
         "build": "next build",
         "start": "next start",
         "lint": "next lint",
-        "install": "node ./install/install.js",
+        "install:db": "node ./install/install.js",
         "test:install": "jest . --config ./install.config.js",
         "test:migrate": "jest .",
         "test": "jest ."
