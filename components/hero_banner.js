@@ -2,7 +2,7 @@ import Image from "next/image"
 import doggo from "/public/pexels-blue-15701898.jpg"
 import Link from "next/link"
 import styles from "./hero_banner.module.css"
-
+// comentario 1
 
 export default function HeroBanner() {
     return <div className={styles.hero}>
