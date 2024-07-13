@@ -1,22 +1,16 @@
 /* tttttttttt */
 
-
-.navContainer {
-    border: solid 1px #000;
-    
-}
-
 .ul {
     display: flex;
     justify-content: center;
     list-style-type: none;
     padding: 10px;
     margin: 5px;
-    border: solid 1px #000;
+
 }
 
 .ul li {
     margin: 5px;
     padding: 5px;
-    border: solid 1px #000;
+
 }
